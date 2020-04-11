@@ -1,0 +1,21 @@
+@use 'base';
+@use 'product';
+
+#app {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.section {
+  color: base.$text;
+  position: relative;
+  scroll-snap-align: center;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	
+	@media (min-height: base.$sm-h) {
+		height: 100vh;
+	}
+}

@@ -1,0 +1,36 @@
+{
+  "data": [
+    {
+      "name": "beginning",
+      "description": "In the\nbeginning\nthere\nwas\na code."
+    },
+    {
+      "name": "commit",
+      "description": "I\ncommit\nyour\nmind."
+    },
+    {
+      "name": "pizza",
+      "description": "Pizza\noverflow\n==\nstack\noverflow."
+    },
+    {
+      "name": "spaghetti",
+      "description": "I\nclean\nspaghetti\ncode."
+    },
+    {
+      "name": "person",
+      "description": "I\ncommit\nlike\na\nperson."
+    },
+    {
+      "name": "null",
+      "description": "I\ntype\nnull\neveryday."
+    },
+    {
+      "name": "coffee",
+      "description": "I\nturn\ncoffee\ninto\ncode."
+    },
+    {
+      "name": "false",
+      "description": "!false\n==\ntrue."
+    }
+  ]
+}
