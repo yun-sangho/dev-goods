@@ -1,12 +1,8 @@
 {
-  "data": [
+  "product": [
     {
       "name": "beginning",
       "description": "In the\nbeginning\nthere\nwas\na code."
-    },
-    {
-      "name": "commit",
-      "description": "I\ncommit\nyour\nmind."
     },
     {
       "name": "pizza",
@@ -31,6 +27,10 @@
     {
       "name": "false",
       "description": "!false\n==\ntrue."
+    },
+    {
+      "name": "commit",
+      "description": "I\ncommit\nyour\nmind."
     }
   ]
 }

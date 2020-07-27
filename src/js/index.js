@@ -1,44 +1,17 @@
-import * as product from '../../asset/product.json';
-import { productFactory } from './product';
+import * as data from '../../asset/data.json';
+import { productFactory } from './components/product';
+import images from '../../asset/img/*.png';
+
+if ('scrollRestoration' in history) {
+  history.scrollRestoration = 'manual';
+}
+
+window.scrollTo(0, 0);
 
 const app = document.getElementById('app');
+const products = document.getElementById('product-list');
 
-product.data.forEach((el) => {
-  const productDOM = productFactory(el);
-  const section = document.createElement('div');
-
-  section.className = 'section';
-  section.appendChild(productDOM);
-  app.appendChild(section);
+data.product.forEach((variables) => {
+  variables.src = images[variables.name];
+  productFactory(variables).render(products);
 });
-
-// const sections = [...document.querySelectorAll('.section')];
-
-// let options = {
-//   rootMargin: '0px',
-//   threshold: 0.75,
-// };
-
-// const callback = (entries) => {
-//   entries.forEach((entry) => {
-//     const { target } = entry;
-
-//     if (entry.intersectionRatio >= 0.75) {
-//       target.classList.add('is-visible');
-//     } else {
-//       target.classList.remove('is-visible');
-//     }
-//   });
-// };
-
-// const observer = new IntersectionObserver(callback, options);
-
-// sections.forEach((section) => {
-//   const sectionChildren = [...section.querySelector('[data-content]').children];
-
-//   sectionChildren.forEach((el, index) => {
-//     el.style.setProperty('--delay', `${index * 150}ms`);
-//   });
-
-//   observer.observe(section);
-// });

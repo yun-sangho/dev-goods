@@ -1,5 +1,6 @@
 @use 'base';
 @use 'product';
+@use 'button';
 
 #app {
   height: 100vh;
@@ -18,4 +19,8 @@
 	@media (min-height: base.$sm-h) {
 		height: 100vh;
 	}
+}
+
+#product-list {
+  padding: 20px;
 }
